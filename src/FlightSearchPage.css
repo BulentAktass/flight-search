@@ -1,0 +1,307 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3e8ff;
+}
+
+.flight-search-page {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  background-color: #7e22ce;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7e22ce;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #7e22ce;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Main content styles */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Search card styles */
+.search-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.search-title .icon {
+  margin-right: 0.5rem;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tab.active {
+  border-bottom: 2px solid #7e22ce;
+  color: #7e22ce;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.input-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.search-button {
+  grid-column: span 2;
+  background-color: #7e22ce;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.search-button:hover {
+  background-color: #6b21a8;
+}
+
+/* Content styles */
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* Flights list styles */
+.flights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.flight-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.flight-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.flight-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.flight-time .time {
+  font-weight: 600;
+}
+
+.flight-time .airport {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.flight-info {
+  text-align: center;
+}
+
+.flight-line {
+  width: 8rem;
+  height: 1px;
+  background-color: #d1d5db;
+  margin: 0.5rem auto;
+}
+
+.flight-price .price {
+  font-weight: 600;
+  color: #7e22ce;
+}
+
+.flight-price .trip-type {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.book-button {
+  background-color: #7e22ce;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background-color: #6b21a8;
+}
+
+.error-card {
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  color: #b91c1c;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.no-flights {
+  background-color: white;
+  padding: 1.5rem;
+  text-align: center;
+  color: #6b7280;
+  border-radius: 0.5rem;
+}
+
+/* Sidebar styles */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-card {
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.sidebar-card h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-card .icon {
+  margin-right: 0.5rem;
+}
+
+.car-rentals {
+  background: linear-gradient(to bottom right, #fbbf24, #d97706);
+}
+
+.hotels {
+  background: linear-gradient(to bottom right, #60a5fa, #2563eb);
+}
+
+.travel-packages {
+  background: linear-gradient(to bottom right, #34d399, #059669);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .search-button {
+    grid-column: span 1;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
